@@ -1,0 +1,8 @@
+<button *ngIf="!this.user" (click)="loginWithGoogle()">Login with Google</button>
+
+<div *ngIf="this.user">
+  ds
+  <ul>
+    <li class="text" *ngFor="let topic of topics | async">{{topic.$value}}</li>
+  </ul>
+</div>
